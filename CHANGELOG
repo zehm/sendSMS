@@ -1,0 +1,93 @@
+# Changelog:
+# v0.2.4     03/08/2006
+#   Incorporated patch to add Alltell Wireless support (provided by Anthony
+#   Valley).  Marked Cricket support as deprecated, since Cricket is
+#   specifically blocking scripts such as this one through technical measures.
+#   CRICKET support will be removed in a future release.
+#   Paul Kreiner
+#
+# v0.2.3     12/15/2005
+#   Incorporated patch to add Cingular support (provided by Barret Kendrick).
+#   Paul Kreiner
+#
+# v0.2.2     10/04/2004
+#   Incorporated change to ATTWS profile to reflect changes on their website.
+#   (reported and patch provided by Joel Chen)
+#   Paul Kreiner
+#
+# v0.2.1     09/25/2004
+#   Added support for HTTPCookie parameter for each provider. Currently, only
+#   SPRINT requires a cookie to be set, but others may need it later.
+#   Incorporated changes and features to support Sprint PCS now that they've
+#   changed their website again (thanks to Joel Chen for his help).
+#   Paul Kreiner
+#
+# v0.2.0     05/13/2004
+#   Incorporated patch to add Bell Canada / Bell Mobility support (provided
+#   by David Caplan).
+#   Removed support for deprecated 'VSTREAM' service provider. NOTE: If you
+#   are still using 'VSTREAM', you must switch to 'TMOBILE'.
+#   Paul Kreiner
+#
+# v0.1.9     12/12/2003
+#   Incorporated change to Sprint PCS profile to reflect changes on their
+#   website - they only send 'Message sent' now (reported by Ken Cochran).
+#   Added global version/date/copyright variables to code so help screen
+#   gives program info without having to modify it in multiple places.
+#   Simplified the help screen by removing "written by:" and extra CR's.
+#   Paul Kreiner
+#
+# v0.1.8     09/15/2003
+#   Incorporated patch to add Sprint PCS support (provided by John Carbone).
+#   Paul Kreiner
+#
+# v0.1.7     09/04/2003
+#   Incorporated patch to add T-Mobile support (provided by Manuel Martin).
+#   Incorporated patch to add Cricket support (provided by Tod Morrison).
+#   Marked VoiceStream support as deprecated in help and code comments.
+#   Small fixes for typos and minor cosmetic code cleanups.
+#   Paul Kreiner
+#
+# v0.1.6     08/12/2002
+#   Updated ATTWS profile to reflect changes on their website.
+#   Jared Cheney
+#
+# v0.1.5     05/29/2002
+#   Updated to support web proxies.
+#   Brandon Zehm
+#
+# v0.1.4     04/04/2002
+#   Updated VoiceStream Support and added support for SkyTel pagers.
+#   Brandon Zehm
+#
+# v0.1.3     01/22/2001
+#   Some changes to get this running on Win32 (ActiveState 5.6.0/build 623).
+#   Couldn't get POSIX::termios or IO::Select to correctly make STDIN non-
+#   blocking, so I gave up after ~4 hrs of trying, and simply removed the
+#   STDIN message-sending functionality for Win32.  If someone out there
+#   can send me a patch (and NOT simply include an external module, such as
+#   Term::ReadKey or something) then maybe it'll be supported.
+#   Paul Kreiner
+#
+# v0.1.2     01/20/2001
+#   Added support for passing a message via STDIN.  Got the list of providers
+#   in the help sub to be dynamically generated, making it that much easier to
+#   add service providers (only two places to edit, now.)  Implemented signal
+#   trapping for cleaner exits.  Added support for Cellular One (unverified).
+#   Minor code cleanups.
+#   Paul Kreiner
+#
+# v0.1.1     01/17/2001
+#   Update to improve modularity and make adding new providers much easier
+#   than before.   Finished removing any global vars, just because I can.
+#   Replaced original encodeAsURL code with much more efficient algorithm.  I
+#   think that was the last of Brandon's original code.
+#   Paul Kreiner
+#
+# v0.1.0     01/15/2001
+#   Initial 'beta' release.  Basic functionality in place, although modularity
+#   needs to be improved.  This is a full rewrite of the original sendSMS.pl
+#   script, with commentary, support for multiple providers, and a more robust
+#   user interface.  Includes support for AT&T WS and VoiceStream (verified).
+#   Paul Kreiner
+#
